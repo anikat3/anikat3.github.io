@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anika Taneja</title>
+  <meta name="description" content="Anika Taneja — CS & Math at UIUC. Applied AI, full-stack, and distributed systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="name">Anika Taneja</a>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#skills">Skills</a>
+      <a href="mailto:anika.taneja5@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <h1>Anika Taneja</h1>
+      <p class="lede">
+        CS &amp; Math at the University of Illinois Urbana-Champaign. I build applied AI systems
+        and full-stack products, most recently voice agents for healthcare clients at Attune.
+      </p>
+      <ul class="links">
+        <li><a href="mailto:anika.taneja5@gmail.com">anika.taneja5@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/anika-taneja" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/anikat3" target="_blank" rel="noopener">GitHub</a></li>      </ul>
+    </section>
+
+    <section id="story">
+      <div class="story-head">
+        <h2>The story so far</h2>
+        <p class="hint"><span class="hint-fine">Hover to preview, click to open.</span><span class="hint-touch">Tap any card to open.</span></p>
+      </div>
+
+      <ol class="timeline">
+        <!-- 2026 -->
+        <li class="year">
+          <span class="year-label">2026</span>
+          <p class="year-note">Applied AI in production.</p>
+        </li>
+
+        <li class="entry" data-logo="images/attune-logo.svg" data-logo-bg="light" data-stat="40%" data-stat-label="more calls completed successfully for a healthcare client">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="attune-body">
+              <span class="entry-kicker"><span class="type">Internship</span><span class="date">Jun – Aug 2026 · Chicago</span></span>
+              <span class="entry-title"><span class="entry-name">Attune</span> <span class="role">Applied AI Forward Deployed Intern</span></span>
+              <span class="entry-summary">Built and debugged voice AI agents for seven healthcare clients.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="attune-body" inert>
+            <div class="entry-inner">
+              <ul>
+                <li>Improved successful-call completion by <strong>40%</strong> for a healthcare client by evaluating 5 Amazon Bedrock LLMs and debugging voice-agent failures.</li>
+                <li>Deployed AI-driven workflows for <strong>7 healthcare clients</strong>, building Python/YAML agents for scheduling, assessments, follow-ups, lab retrieval, and IVR.</li>
+                <li>Integrated REST APIs so agents could schedule appointments and retrieve lab results from external systems.</li>
+                <li>Reached a <strong>96%</strong> automated conversation-test pass rate with 150+ Cekura and local tests.</li>
+                <li>Resolved production agent issues using Grafana logs and Docker/Kubernetes debugging.</li>
+              </ul>
+              <p class="entry-links"><a href="https://www.attune.ai/" target="_blank" rel="noopener">attune.ai ↗</a></p>
+              <p class="tags">Python · YAML · Amazon Bedrock · REST APIs · Docker · Kubernetes · Grafana</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 2025 -->
+        <li class="year">
+          <span class="year-label">2025</span>
+          <p class="year-note">Shipping for real users, from a startup in Singapore to 36 hours at HackIllinois.</p>
+        </li>
+
+        <li class="entry" data-preview-img="images/unfair-extension.png">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="unfair-body">
+              <span class="entry-kicker"><span class="type">Project</span><span class="date">Sep 2025 – Jan 2026</span></span>
+              <span class="entry-title"><span class="entry-name">UNFAIR</span> <span class="role">AI Usage Tracker</span></span>
+              <span class="entry-summary">A Chrome extension that gives students evidence of how they actually used AI.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="unfair-body" inert>
+            <div class="entry-inner">
+              <p>UIUC recorded 1,210 academic integrity reports in 2024–25, and unreliable AI detectors leave students open to false accusations. UNFAIR gives them evidence instead: a Chrome extension that records their AI conversations on ChatGPT, Claude, and Gemini and exports a transcript they can share with instructors.</p>
+
+              <div class="walkthrough">
+                <figure class="feature">
+                  <a href="images/unfair-extension.png"><img src="images/unfair-extension.png" alt="Extension popup showing an active recording and a list of assignments" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">01</span>Record per assignment</h4>
+                    <p>Students start a recording for a specific assignment from the extension popup. A live timer and interaction count show what's being captured, with controls to pause or stop and export.</p>
+                    <p>Each assignment keeps its own history and is marked Active, Paused, or Done, so work on several courses stays separate. Finished assignments link straight to their transcript.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/unfair-overlay.png"><img src="images/unfair-overlay.png" alt="Recording indicator overlaid on a ChatGPT session" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">02</span>Always-visible indicator</h4>
+                    <p>While a student uses ChatGPT, Claude, or Gemini, a small indicator sits on the page showing the assignment, elapsed time, and interactions logged so far.</p>
+                    <p>It's draggable but can't be hidden, so students always know when they're being recorded. Pause and stop work without leaving the chat.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/unfair-transcript.png"><img src="images/unfair-transcript.png" alt="Exported transcript header with collaboration summary stats" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">03</span>Verified transcript</h4>
+                    <p>Stopping a recording generates a transcript tied to the student, course, assignment, and due date, ready to hand to an instructor.</p>
+                    <p>A summary up top gives the key numbers at a glance: total interactions, recording time, how many AI responses the student actually used, and an estimate of how much of the work was AI-assisted.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/unfair-log.png"><img src="images/unfair-log.png" alt="Timestamped log of student prompts and AI responses" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">04</span>Complete interaction log</h4>
+                    <p>Below the summary, every interaction is numbered and timestamped, and tagged by type, such as coding help, so an instructor can scan the log quickly.</p>
+                    <p>An instructor can see that a student asked conceptual questions like "what is a binary tree" rather than asking for the finished assignment. Each transcript is stamped with when it was generated.</p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p>I wrote the TypeScript capture layer, which logs timestamped interactions across three sites with very different page structures, plus the Firebase storage and the Next.js review dashboard. Interviews with students and professors shaped what the transcript shows.</p>
+              <p class="tags">TypeScript · Chrome Extension · Next.js · Firebase</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry" data-logo="images/estha-logo.png" data-logo-bg="dark" data-stat="3" data-stat-label="marketplace workflows shipped, from listing to Stripe checkout">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="estha-body">
+              <span class="entry-kicker"><span class="type">Internship</span><span class="date">May – Jul 2025 · Singapore</span></span>
+              <span class="entry-title"><span class="entry-name">Estha.ai</span> <span class="role">Software Development &amp; Marketing Intern</span></span>
+              <span class="entry-summary">Marketplace, payments, and sign-in for an AI app platform.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="estha-body" inert>
+            <div class="entry-inner">
+              <ul>
+                <li>Built <strong>3 marketplace workflows</strong> (app listings, subscriptions, Stripe payments) with Next.js and Supabase, enabling end-to-end purchases.</li>
+                <li>Secured account access with Google OAuth and role-based access control.</li>
+                <li>Built dynamic listing filters for real-time app discovery.</li>
+                <li>Converted <strong>20+ leads</strong> into active users through demos and pitches to 50+ prospective partners.</li>
+              </ul>
+              <p class="entry-links"><a href="https://estha.ai/" target="_blank" rel="noopener">estha.ai ↗</a></p>
+              <p class="tags">Next.js · Supabase · Stripe · OAuth · RBAC</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry" data-preview-img="images/zyncup-calendar.png">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="zyncup-body">
+              <span class="entry-kicker"><span class="type">Hackathon</span><span class="date">Mar 2025 · HackIllinois</span></span>
+              <span class="entry-title"><span class="entry-name">ZyncUp</span> <span class="role">Group scheduling app</span></span>
+              <span class="entry-summary">Finds a time everyone is free, across time zones. Built in 36 hours.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="zyncup-body" inert>
+            <div class="entry-inner">
+              <p>Plans with friends and family fall apart over busy schedules and time zone mix-ups, and the more people involved, the worse it gets. ZyncUp syncs everyone's Google Calendar and suggests meeting times that work for the whole group. We built it in 36 hours at HackIllinois 2025 as a team of four.</p>
+
+              <a class="video" href="https://www.youtube.com/watch?v=vLrHj1GFICk" target="_blank" rel="noopener" data-youtube="vLrHj1GFICk">
+                <img src="images/zyncup-video.jpg" alt="ZyncUp demo video" loading="lazy">
+                <span class="play" aria-hidden="true"></span>
+                <span class="video-label">Watch the demo</span>
+              </a>
+
+              <div class="walkthrough">
+                <figure class="feature">
+                  <a href="images/zyncup-calendar.png"><img src="images/zyncup-calendar.png" alt="Figma designs of the ZyncUp sign-in screen and a calendar view with a time zone selector" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">01</span>Sign in and see your week</h4>
+                    <p>Users sign up with Google, which gives ZyncUp read-only access to their calendar. The home screen shows the current time in their chosen time zone above a day view of their synced events.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/zyncup-group.png"><img src="images/zyncup-group.png" alt="Figma designs of the group creation form with an access code and a group member list" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">02</span>Form a group</h4>
+                    <p>Creating a group generates an access code to share. Friends enter the code to join, and the group view lists everyone in it.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/zyncup-meets.png"><img src="images/zyncup-meets.png" alt="Figma designs of the settings page, create or join group page, and upcoming meets list" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">03</span>Upcoming meets</h4>
+                    <p>Each group shows its next available meeting time, in the viewer's own time zone. Users can create a new group by size or join one by code, and turn on push notifications in settings.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="caption">Screens above are the team's Figma designs.</p>
+
+              <p><strong>Under the hood:</strong> each member's events for the coming week are pulled from the Google Calendar API into Firestore. The app merges everyone's events, converts them to UTC, and finds the gaps long enough for a meeting. A slot is kept only if it falls between 8 AM and 2 AM in every member's local time.</p>
+              <p class="entry-links">
+                <a href="https://devpost.com/software/zyncup" target="_blank" rel="noopener">Devpost ↗</a>
+                <a href="https://github.com/anikat3/ZyncUp" target="_blank" rel="noopener">Code on GitHub ↗</a>
+              </p>
+              <p class="tags">Next.js · React · Firebase · Google Calendar API · NextAuth · Figma</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 2024 -->
+        <li class="year">
+          <span class="year-label">2024</span>
+          <p class="year-note">First full-stack team project, and first time leading a team.</p>
+        </li>
+
+        <li class="entry" data-preview-img="images/market-home.jpg">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="market-body">
+              <span class="entry-kicker"><span class="type">Project</span><span class="date">Sep – Dec 2024</span></span>
+              <span class="entry-title"><span class="entry-name">UIUC Marketplace</span> <span class="role">Campus buy &amp; sell platform</span></span>
+              <span class="entry-summary">A dedicated place for UIUC students to buy and sell, so they don't have to dig through the campus Snapchat story.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="market-body" inert>
+            <div class="entry-inner">
+              <p>UIUC students mostly sell things on the campus Snapchat story, where game tickets and clothes are buried in an endless feed. UIUC Marketplace gives them a dedicated place to list items, search for deals, and check out, all behind a login. Built with a 4-person team.</p>
+
+              <div class="walkthrough">
+                <figure class="feature">
+                  <a href="images/market-login.png"><img src="images/market-login.png" alt="Login page with email and password fields" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">01</span>Sign in with JWT</h4>
+                    <p>Login and sign-up are centered on screen and link to each other. On a successful login, the server issues a JSON Web Token that the browser stores.</p>
+                    <p>That token goes with every request to a protected route, so only signed-in students can browse or sell.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-home.jpg"><img src="images/market-home.jpg" alt="Home page grid of featured product listings" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">02</span>Featured listings</h4>
+                    <p>Listings take up the home page, because selling is the whole point. The newest items are pulled from the database as featured products, each showing the seller, category, price, and a quick add-to-cart button.</p>
+                    <p>A responsive navbar links to search, cart, new listing, profile, and logout on any screen size.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-search.jpg"><img src="images/market-search.jpg" alt="Search results for Nintendo with category and price filters" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">03</span>Search and filter</h4>
+                    <p>A search generates its own URL route, which the item router hands to a <code>filterItems</code> controller before sending the user to the results page.</p>
+                    <p>From there, students can narrow results by category or price range, or clear the filters to start over.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-product.jpg"><img src="images/market-product.jpg" alt="Product detail page for a Nintendo Switch with price, seller, and Add to Cart" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">04</span>Product page</h4>
+                    <p>Each listing has its own page with the photo, the seller's description, price, seller, and category, plus an Add to Cart button.</p>
+                    <p>A "You May Also Like" row below suggests other listings so buyers keep browsing.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-cart.jpg"><img src="images/market-cart.jpg" alt="Cart with one item, total, and checkout buttons" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">05</span>Cart</h4>
+                    <p>The cart lists everything a buyer has added, with a running total. Items can be removed one at a time, or the cart can be cleared before checkout.</p>
+                    <p>Each user's cart is stored on their user record as an array of item IDs, and a cart controller handles add, remove, and empty.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-post.jpg"><img src="images/market-post.jpg" alt="Post a new product form with a microwave photo uploaded" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">06</span>Post a listing</h4>
+                    <p>Sellers enter a name, category, description, and price, then upload photos with a preview. Category and price also power the search filters.</p>
+                    <p>The form is sent as a multipart request through auth middleware. Multer then processes the images, and the item is checked against the item schema before it's saved.</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="feature">
+                  <a href="images/market-profile.jpg"><img src="images/market-profile.jpg" alt="Profile page with editable account details and items for sale" loading="lazy"></a>
+                  <figcaption>
+                    <h4><span class="step">07</span>Profile</h4>
+                    <p>Users can update their name, email, password, and profile picture, and see everything they've listed in one place.</p>
+                    <p>After authentication, the backend fetches every item whose seller matches the signed-in user's email, newest first.</p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p>We also added real-time buyer–seller messaging over WebSockets and React Testing Library tests for key interactions.</p>
+              <p class="tags">React · Node.js · Express · MongoDB · JWT · WebSockets</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="entry" data-stat="10" data-stat-label="person cross-functional team led through 12+ client working sessions">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>
+            <button class="entry-toggle" aria-expanded="false" aria-controls="ibc-body">
+              <span class="entry-kicker"><span class="type">Leadership</span><span class="date">Jan 2024 – May 2025</span></span>
+              <span class="entry-title"><span class="entry-name">Illinois Business Consulting</span> <span class="role">Senior Consultant</span></span>
+              <span class="entry-summary">Led a 10-person team building strategy plans and a data tool for real clients.</span>
+              <span class="toggle-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="entry-body" id="ibc-body" inert>
+            <div class="entry-inner">
+              <ul>
+                <li><strong>Team lead:</strong> led a <strong>10-person</strong> cross-functional team, managing project timelines, facilitating <strong>12+</strong> client working sessions, and reviewing weekly deliverables.</li>
+                <li><strong>Founder matching tool:</strong> led development of a web scraper and data-mapping algorithm that matches entrepreneurs with relevant accelerators, mentors, and resources.</li>
+                <li><strong>Veterinary consulting service:</strong> delivered a 5-point go-to-market strategy that identified 3 target segments and 5 partnership opportunities.</li>
+                <li><strong>Park district:</strong> delivered a 3-year strategic plan, with initiatives projected to improve operational efficiency by 12% and customer engagement by 18%.</li>
+              </ul>
+              <p>Both strategy projects were built on market research, competitor analysis, and stakeholder interviews.</p>
+              <p class="tags">Web Scraping · Data Mapping · Market Research · Competitor Analysis · Stakeholder Interviews</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>Python, TypeScript, JavaScript, SQL, C++</dd>
+        <dt>Web</dt>
+        <dd>React, Next.js, Node.js, Express.js, REST APIs, WebSockets</dd>
+        <dt>Data &amp; Infra</dt>
+        <dd>PostgreSQL, Supabase, Firebase, AWS, Docker, Kubernetes, Grafana</dd>
+        <dt>Coursework</dt>
+        <dd>Distributed Systems, Cloud Computing, Database Systems, Systems Programming, Algorithms</dd>
+      </dl>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>University of Illinois Urbana-Champaign <span class="role">B.S. Computer Science &amp; Mathematics</span></h3>
+        <span class="meta">May 2027 · GPA 3.84</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Anika Taneja · Champaign, IL</p>
+  </footer>
+
+  <div class="hover-preview" aria-hidden="true"></div>
+  <dialog id="lightbox"><img alt=""></dialog>
+
+  <script>
+    // Expand / collapse
+    const entries = document.querySelectorAll(".entry");
+    entries.forEach((entry) => {
+      const btn = entry.querySelector(".entry-toggle");
+      const body = entry.querySelector(".entry-body");
+      btn.addEventListener("click", () => {
+        const open = !entry.classList.contains("open");
+        entry.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open);
+        body.inert = !open;
+        if (open) hidePreview();
+      });
+    });
+
+    // Hover preview that follows the cursor
+    const preview = document.querySelector(".hover-preview");
+    const canHover = matchMedia("(hover: hover) and (pointer: fine)");
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    let mouseX = 0, mouseY = 0, posX = 0, posY = 0, frame = null, active = false;
+
+    function target() {
+      const w = preview.offsetWidth, h = preview.offsetHeight;
+      let x = mouseX + 28;
+      if (x + w > innerWidth - 16) x = mouseX - w - 28;
+      const y = Math.max(16, Math.min(mouseY - h / 2, innerHeight - h - 16));
+      return [x, y];
+    }
+
+    function tick() {
+      const [x, y] = target();
+      const ease = reduceMotion.matches ? 1 : 0.16;
+      posX += (x - posX) * ease;
+      posY += (y - posY) * ease;
+      preview.style.transform = `translate3d(${posX}px, ${posY}px, 0)`;
+      frame = active ? requestAnimationFrame(tick) : null;
+    }
+
+    function showPreview(entry) {
+      const { previewImg, logo, logoBg, stat, statLabel } = entry.dataset;
+      const name = entry.querySelector(".entry-name").textContent;
+      const top = logo
+        ? `<div class="hp-logo hp-logo-${logoBg}"><img src="${logo}" alt="${name}"></div>`
+        : "";
+      preview.innerHTML = previewImg
+        ? `<div class="hp-card hp-image"><img src="${previewImg}" alt=""></div>`
+        : `<div class="hp-card">${top}<div class="hp-stat">${logo ? "" : `<span class="hp-kicker">${name}</span>`}<span class="hp-number">${stat}</span><span class="hp-label">${statLabel}</span></div></div>`;
+      if (!active) {
+        [posX, posY] = target();
+        active = true;
+        frame = frame || requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(() => preview.classList.add("visible"));
+    }
+
+    function hidePreview() {
+      active = false;
+      preview.classList.remove("visible");
+    }
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    entries.forEach((entry) => {
+      const btn = entry.querySelector(".entry-toggle");
+      btn.addEventListener("mouseenter", () => {
+        if (canHover.matches && !entry.classList.contains("open")) showPreview(entry);
+      });
+      btn.addEventListener("mouseleave", hidePreview);
+    });
+
+    // Load preview images up front so the hover card appears instantly
+    entries.forEach((entry) => {
+      const src = entry.dataset.previewImg || entry.dataset.logo;
+      if (src) new Image().src = src;
+    });
+
+    // YouTube only plays embeds on a real website, so play inline when hosted
+    // and fall back to opening YouTube when the file is opened locally.
+    document.querySelectorAll(".video[data-youtube]").forEach((link) => {
+      if (!location.protocol.startsWith("http")) return;
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const frame = document.createElement("iframe");
+        frame.src = `https://www.youtube-nocookie.com/embed/${link.dataset.youtube}?autoplay=1`;
+        frame.title = "ZyncUp demo video";
+        frame.allow = "autoplay; encrypted-media; picture-in-picture";
+        frame.referrerPolicy = "strict-origin-when-cross-origin";
+        frame.allowFullscreen = true;
+        const wrap = document.createElement("div");
+        wrap.className = "video";
+        wrap.append(frame);
+        link.replaceWith(wrap);
+      });
+    });
+
+    // Lightbox for walkthrough screenshots
+    const box = document.getElementById("lightbox");
+    const boxImg = box.querySelector("img");
+    document.querySelectorAll(".feature > a").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        boxImg.src = a.href;
+        boxImg.alt = a.querySelector("img").alt;
+        box.showModal();
+      });
+    });
+    box.addEventListener("click", () => box.close());
+  </script>
+</body>
+</html>
